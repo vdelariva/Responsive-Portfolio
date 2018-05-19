@@ -148,4 +148,43 @@ footer {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 980px) {
+    header {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+
+}
+
+/* No need for this media query since both the header
+and .container elements inherit the 100% width from
+the previous media query for 980px
+
+@media only screen and (max-width: 768px) {
+
+} */
+
+@media only screen and (max-width: 640px) {
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    h1 {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        padding: 15px 0;
+        justify-content: space-evenly;
+    }
+    img {
+        width: 100%;
+    }
+
+}
